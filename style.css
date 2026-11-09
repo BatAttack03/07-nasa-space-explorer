@@ -142,3 +142,227 @@ button:hover {
   font-size: 48px;
   margin-bottom: 20px;
 }
+
+
+/* Random space fact */
+.space-fact {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* Hover zoom effect (extra credit) */
+.gallery-item img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal background */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Large image */
+.modal-content img {
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+/* Explanation */
+.modal-content p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Close button */
+.close-modal {
+  width: auto;
+  float: right;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+}
+
+
+/* NASA-inspired colors and typography */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef2f8;
+  color: #07152d;
+}
+
+h1 {
+  font-family: Verdana, Arial, sans-serif;
+  color: #0b3d91;
+}
+
+/* NASA blue button */
+.filters button {
+  background-color: #0b3d91;
+  color: white;
+  border-color: #0b3d91;
+  font-weight: bold;
+}
+
+.filters button:hover {
+  background-color: #082b68;
+}
+
+/* Gallery cards */
+.gallery-item {
+  background-color: white;
+  border-top: 4px solid #0b3d91;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(11, 61, 145, 0.2);
+}
+
+.gallery-item h3 {
+  color: #0b3d91;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+.gallery-item p {
+  color: #555;
+}
+
+/* Hover zoom effect */
+.gallery-item img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item:focus-visible {
+  outline: 3px solid #fc3d21;
+  outline-offset: 3px;
+}
+
+/* Space fact */
+.space-fact {
+  background-color: #0b3d91;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Modal overlay */
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(7, 21, 45, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  background-color: white;
+  color: #07152d;
+  border-radius: 8px;
+  padding: 25px;
+  width: 100%;
+  max-width: 750px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-top: 5px solid #fc3d21;
+}
+
+.modal-content h2 {
+  color: #0b3d91;
+  padding-right: 50px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+.modal-content p {
+  margin-top: 12px;
+  line-height: 1.7;
+}
+
+/* Modal close button */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: auto;
+  padding: 5px 12px;
+  background-color: #fc3d21;
+  color: white;
+  border: none;
+}
+
+.close-modal:hover {
+  background-color: #c82e18;
+}
+
+.video-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: #0b3d91;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+
+.video-link:hover {
+  background-color: #082b68;
+  text-decoration: underline;
+}
+
+.modal-content .video-link {
+  min-height: 100px;
+  margin: 15px 0;
+}
